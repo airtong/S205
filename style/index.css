@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #11079b;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center; /* Alinhar verticalmente */
+    justify-content: space-between; /* Distribuir os itens igualmente */
+}
+
+header h1 {
+    margin: 0; /* Remover margem padrão do h1 */
+}
+
+header i {
+    font-size: 20px; /* Tamanho dos ícones */
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+}
+
+h2 {
+    color: #333;
+}
+
+p {
+    color: #000;
+}
+
+footer {
+    background-color: #11079b;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    color: #fff;
+}
+
+/* Estilo para o menu lateral */
+#sideMenu {
+    position: fixed;
+    left: -250px; /* Inicialmente oculto */
+    top: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    padding-top: 60px; /* Para compensar o espaço ocupado pelo cabeçalho */
+    transition: left 0.3s ease;
+}
+
+#sideMenu a {
+    display: block;
+    padding: 15px 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+#sideMenu a:hover {
+    background-color: #555;
+}
+
+/* Estilo para o menu lateral quando aberto */
+#sideMenu.open {
+    left: 0;
+}
