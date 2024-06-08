@@ -1,5 +1,12 @@
+:root {
+    --md-sys-color-primary: #006A6A;
+    --md-sys-color-on-primary: #FFFFFF;
+    --md-sys-color-primary-container: #6FF7F6;
+    --md-sys-color-on-primary-container: #002020;
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
     margin: 0;
     padding: 0;
     display: flex;
@@ -36,8 +43,8 @@ input[type="password"] {
 }
 
 button {
-    background-color: #007bff;
-    color: #fff;
+    background-color: var(--md-sys-color-primary);
+    color: var(--md-sys-color-on-primary);
     padding: 10px 20px;
     border: none;
     border-radius: 5px;

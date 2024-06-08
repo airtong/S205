@@ -1,25 +1,32 @@
+:root {
+    --md-sys-color-primary: #006A6A;
+    --md-sys-color-on-primary: #FFFFFF;
+    --md-sys-color-primary-container: #6FF7F6;
+    --md-sys-color-on-primary-container: #002020;
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-color: #11079b;
-    color: #fff;
+    background-color: var(--md-sys-color-primary);
+    color: var(--md-sys-color-on-primary);
     padding: 20px;
     text-align: center;
     display: flex;
-    align-items: center; /* Alinhar verticalmente */
-    justify-content: space-between; /* Distribuir os itens igualmente */
+    align-items: center;
+    justify-content: space-between;
 }
 
 header h1 {
-    margin: 0; /* Remover margem padrão do h1 */
+    margin: 0;
 }
 
 header i {
-    font-size: 20px; /* Tamanho dos ícones */
+    font-size: 20px;
 }
 
 main {
@@ -41,8 +48,8 @@ p {
 }
 
 footer {
-    background-color: #11079b;
-    color: #fff;
+    background-color: var(--md-sys-color-primary);
+    color: var(--md-sys-color-on-primary);
     padding: 20px;
     text-align: center;
     position: fixed;
@@ -51,18 +58,18 @@ footer {
 }
 
 footer p {
-    color: #fff;
+    margin: 0;
 }
 
 /* Estilo para o menu lateral */
 #sideMenu {
     position: fixed;
-    left: -250px; /* Inicialmente oculto */
+    left: -250px;
     top: 0;
     width: 250px;
     height: 100%;
     background-color: #333;
-    padding-top: 60px; /* Para compensar o espaço ocupado pelo cabeçalho */
+    padding-top: 60px;
     transition: left 0.3s ease;
 }
 
@@ -77,7 +84,26 @@ footer p {
     background-color: #555;
 }
 
-/* Estilo para o menu lateral quando aberto */
 #sideMenu.open {
     left: 0;
+}
+
+/* Estilo para os botões de mudança de tema */
+#themeButtons {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+#themeButtons button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: var(--md-sys-color-primary);
+    color: var(--md-sys-color-on-primary);
+}
+
+#themeButtons button:hover {
+    background-color: #0056b3;
 }
